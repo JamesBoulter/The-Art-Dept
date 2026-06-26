@@ -1,0 +1,21 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/create-connect-account"
+  to = "/.netlify/functions/create-connect-account"
+  status = 200
+
+[[redirects]]
+  from = "/api/connect-status"
+  to = "/.netlify/functions/connect-status"
+  status = 200
+
+[[redirects]]
+  from = "/api/create-checkout-session"
+  to = "/.netlify/functions/create-checkout-session"
+  status = 200
